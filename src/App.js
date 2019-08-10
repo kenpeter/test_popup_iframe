@@ -2,7 +2,7 @@ import React from 'react';
 import Iframe from 'react-iframe';
 
 /*
-// 1. works
+// 1. working?????
 // 2. IE blob, download file
 // 3. not-ie, new win iframe
 function pdf() {
@@ -63,8 +63,10 @@ function App() {
 }
 */
 
-// 1. react-iframe
-// 2. test on IE 15 edge windows 10, blank page
+
+// 1. Not working
+// 2. react-iframe
+// 3. test on IE 15 edge windows 10, blank page
 function App() {
   const meta = 'data:application/pdf;base64,';
 
@@ -97,6 +99,26 @@ function App() {
 }
 
 
+
+/*
+// 1. Working only with file
+// 2. use file
+const pdf = require('./sample.pdf');
+function App() {
+
+  return (
+    <div className="App">
+      <Iframe url={pdf}
+        width="450px"
+        height="450px"
+        id="myId"
+        className="myClassname"
+        display="initial"
+        position="relative"/>
+    </div>
+  );
+}
+*/
 
 
 export default App;
